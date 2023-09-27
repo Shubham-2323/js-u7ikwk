@@ -80,15 +80,15 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // sum of n natural number
 console.log('abcd');
 
-function sum1(n) {
-  let total = 0;
-  for (let i = 1; i <= n; i++) {
-    total = total + i;
-  }
-  return total;
-}
+// function sum1(n) {
+//   let total = 0;
+//   for (let i = 1; i <= n; i++) {
+//     total = total + i;
+//   }
+//   return total;
+// }
 
-console.log(sum1(10));
+// console.log(sum1(10));
 
 // function sum(n) {
 //   return (n * (n + 1)) / 2;
@@ -96,12 +96,40 @@ console.log(sum1(10));
 
 // console.log(sum(100));
 
-function sum() {
-  const number = parseInt(prompt('enter a number'));
+// function sum() {
+//   const number = parseInt(prompt('enter a number'));
+//   let total = 0;
+//   for (let i = 1; i <= number; i++) {
+//     total = total + i;
+//   }
+//   console.log('Sum of n natural num', total);
+// }
+// sum();
+
+
+
+// function sum3() {
+//   let total = 0;
+//   for (let i = 1; i <= number2; i++) {
+//     total = total + i;
+//   }
+//   return total;
+// }
+// const number2 = parseInt(prompt('enter a number'));
+// console.log(sum3(number2));
+
+
+
+const sumArray = (number) => {
   let total = 0;
-  for (let i = 1; i <= number; i++) {
-    total = total + i;
+
+  for (const n of number) {
+    console.log(n);
+    total = total + n;
   }
-  console.log('Sum of n natural num', total);
-}
-sum();
+  return total;
+};
+
+const num = [1, 2, 3, 4, 5];
+
+console.log(sumArray(num));
